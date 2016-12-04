@@ -1,0 +1,26 @@
+<footer class="blog-footer content-wrapper">
+    <p>&copy; <span class="full-year"></span> {{ site.title }}</p>
+    <a href="http://www.google.com/recaptcha/mailhide/d?k=01QwcSlrS_xqOdmeyWX8ct0g==&amp;c=8R6cX9FVhf0yZl32JHmZTKokHpGW98hWgrBrS3_57jU=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01QwcSlrS_xqOdmeyWX8ct0g\x3d\x3d\x26c\x3d8R6cX9FVhf0yZl32JHmZTKokHpGW98hWgrBrS3_57jU\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">h...</a>@kentaccn.com
+</footer>
+<script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+<!-- Total Reading Time calc-->
+<script src="{{ site.baseurl }}/assets/js/readingTime.js"></script>
+<script>
+$(function() {
+
+    $('article').readingTime({
+        readingTimeTarget: $(this).find('.eta'),
+        wordCountTarget: $(this).find('.words'),
+        success: function() {
+            console.log('Reading Time and wowrds calc worked!');
+        },
+        error: function(message) {
+            console.log(message);
+            $(this).find('.eta').remove();
+            $(this).find('.words').remove();
+        }
+    });
+
+});
+</script>
+<script src="{{ site.baseurl }}/assets/js/progress.js"></script>

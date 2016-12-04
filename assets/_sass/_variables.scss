@@ -1,0 +1,15 @@
+$lg-break-point: 1200px;
+$break-point: 960px;
+$md-break-point: 640px;
+$sm-break-point: 320px;
+
+$aside-width: 25%;
+$content-wrapper-width: 90%;
+$post-margin-left: calc(#{$aside-width} + 5%);
+//$article-max-width: 65%;
+$article-max-width: calc(calc(100% - #{$post-margin-left}) - calc(#{$post-margin-left} - #{$aside-width}));
+
+
+$img: "../images";
+$js: "../js";
+$font: "../font";
