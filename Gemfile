@@ -21,10 +21,9 @@ gem "minima", "~> 2.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
-   #gem "jekyll-categories"
    gem "jekyll-paginate"
    gem "emoji_for_jekyll"
    gem "jekyll-paginate-categories"
-   #gem "jekyll-tagging-pagination"
+   #gem "jekyll-paginate-cats"
    gem "jekyll-paginate-tags"
 end

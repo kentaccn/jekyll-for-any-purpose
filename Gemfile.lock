@@ -24,7 +24,7 @@ GEM
     jekyll-paginate-categories (1.0.1)
       jekyll (>= 2.5)
       jekyll-paginate (~> 1.1)
-    jekyll-paginate-tags (2.0.2)
+    jekyll-paginate-tags (2.0.4)
       jekyll (>= 2.5)
       jekyll-paginate (~> 1.1)
     jekyll-sass-converter (1.5.0)

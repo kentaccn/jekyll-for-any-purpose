@@ -12,10 +12,19 @@
       {% endif %}
     {% endfor %}
 
-    <!-- -->
+    <!-- 
     <a href="{{ "/design" | prepend: site.baseurl }}">Design</a>
     <a href="{{ "/startup" | prepend: site.baseurl }}">Startup</a>
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>-->
+    
+    <!-- Auto search categories and display menu-->
+    {% for cat in site.categories %}
+      <a href="{{ site.baseurl }}/{{ cat[0] | slugify }}" >{{ cat[0] }}</a>
+    {% endfor %}
+
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+
+    
 
     <label for="menu-checkbox" class="toggle-button" data-open="☰" data-close="☰" onclick></label>
   </nav>
