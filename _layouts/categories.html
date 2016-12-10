@@ -18,6 +18,7 @@ layout: default
 {% endfor %}
 
 <!-- Pagination links -->
+<!--
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
@@ -31,3 +32,27 @@ layout: default
     <span class="next">Next</span>
   {% endif %}
 </div>
+-->
+
+  {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+
+      {% if paginator.next_page %}
+        <a class="link-to-post" href="{{ site.baseurl }}/{{ page.category }}/all/page/{{paginator.next_page}}">Older Posts</a>
+      {% else %}
+        
+      {% endif %}
+      {% if paginator.previous_page %}
+
+        {% if paginator.page == 2 %}
+          <a class="link-to-post" href="{{ site.baseurl }}/{{ page.category }}">Newer Posts</a>
+
+        {% else %}
+
+          <a class="link-to-post" href="{{ site.baseurl }}/{{ page.category }}/all/page/{{paginator.previous_page}}">Newer Posts</a>
+        {% endif %}
+      {% else %}
+        
+      {% endif %}
+    </div>
+  {% endif %} 

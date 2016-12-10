@@ -16,11 +16,17 @@
     <a href="{{ "/design" | prepend: site.baseurl }}">Design</a>
     <a href="{{ "/startup" | prepend: site.baseurl }}">Startup</a>
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>-->
+
+    <a href="{{ "/all" | prepend: site.baseurl }}">Latest</a>
     
     <!-- Auto search categories and display menu-->
     {% for cat in site.categories %}
       <a href="{{ site.baseurl }}/{{ cat[0] | slugify }}" >{{ cat[0] }}</a>
     {% endfor %}
+
+    <a href="{{ "/helloworld" | prepend: site.baseurl }}">Hello World</a>
+
+    <a href="{{ "/contact" | prepend: site.baseurl }}">Contact</a>
 
     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
 

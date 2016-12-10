@@ -34,10 +34,9 @@ title: Blog
 
   {% endfor %}
 
-
+  <!--
   {% if paginator.total_pages > 1 %}
     <div class="pagination">
-
       {% if paginator.next_page %}
         <a class="link-to-post" href="{{ site.baseurl }}/all/page/{{paginator.next_page}}">Older Posts</a>
       {% else %}
@@ -57,6 +56,14 @@ title: Blog
       {% endif %}
     </div>
   {% endif %} 
+  -->
+
+  {% if paginator.page != 1 %}
+    {% include pagination.html %}
+  {% else %}
+    The original content of index
+  {% endif %}
+
 </div>
 
 
