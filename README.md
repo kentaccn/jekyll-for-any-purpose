@@ -5,6 +5,11 @@ All code for kentaccn.com
 ### How do I get set up? ###
 
 * git clone
+* gem install jekyll bundler
+* cd to this folder
+* jekyll bundle install
+* bundle exec jekyll serve --incremental --watch --trace
+
 
 ## Contributing
 
