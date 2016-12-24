@@ -29,7 +29,7 @@ logo: '/public/logo.png'
 show_dir_listing: false
 allpost: "all"
 port:    4000
-gems: [jekyll-feed, emoji_for_jekyll, jekyll-paginate, jekyll-paginate-categories, jekyll-paginate-tags]
+gems: [jekyll-feed, emoji_for_jekyll, jekyll-paginate, jekyll-paginate-categories, jekyll-paginate-tags, jekyll-polyglot]
 markdown: kramdown
 kramdown:
   input: GFM
@@ -39,7 +39,6 @@ sass:
 images: "assets/images"
 
 ##for fixed page, not post
-pages: "_pages"
 exclude:
   - Gemfile
   - Gemfile.lock

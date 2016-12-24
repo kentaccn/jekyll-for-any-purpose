@@ -26,4 +26,5 @@ group :jekyll_plugins do
    gem "jekyll-paginate-categories"
    #gem "jekyll-paginate-cats"
    gem "jekyll-paginate-tags"
+   gem "jekyll-polyglot"
 end
