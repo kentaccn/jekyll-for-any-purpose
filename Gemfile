@@ -22,7 +22,7 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-paginate"
-   gem "emoji_for_jekyll"
+   #gem "emoji_for_jekyll"
    gem "jekyll-paginate-categories"
    #gem "jekyll-paginate-cats"
    gem "jekyll-paginate-tags"

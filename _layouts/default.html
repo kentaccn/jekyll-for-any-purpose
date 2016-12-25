@@ -12,11 +12,12 @@ layout: compress
       {% include header.html %}
       {% include aside.html %}
 
-    <main class="content-wrapper">
-      {{ content }}
+    <main>
+      <div class="content-wrapper">
+        {{ content }}
+      </div>
     </main>
-
-    {% include footer.html %}
-
   </body>
+
+  {% include footer.html %}
 </html>

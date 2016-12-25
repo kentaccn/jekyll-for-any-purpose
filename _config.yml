@@ -29,7 +29,7 @@ logo: '/public/logo.png'
 show_dir_listing: false
 allpost: "all"
 port:    4000
-gems: [jekyll-feed, emoji_for_jekyll, jekyll-paginate, jekyll-paginate-categories, jekyll-paginate-tags, jekyll-polyglot]
+gems: [jekyll-feed, jekyll-paginate, jekyll-paginate-categories, jekyll-paginate-tags, jekyll-polyglot]
 markdown: kramdown
 kramdown:
   input: GFM
@@ -45,7 +45,7 @@ exclude:
   - gitignore
 
 version: 1.0.0
-emoji-images-path: "images/emoji"
+
 include: ["_pages"]
 
 
@@ -106,6 +106,9 @@ lsi: false
 
 #excerpt_separator: "\n\n"
 excerpt_separator: "<!-- more -->"
+
+#Emoji
+emoji-images-path: "images/emoji"
 emoji: false
 emoji-whitelist:
   - bowtie
